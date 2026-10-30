@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Net.Mail;
-
 class Hesap
 {
     static void Main ()
@@ -10,6 +9,7 @@ class Hesap
     int bakiye = 1000;
     Console.Write("Bakiye görüntülemek için 1 e basınız\n para çekmek için 2 ye basınız \n para yatırmak için 3 e basınız \n Şeçiniz : ");
      int secim= Convert.ToInt32(Console.ReadLine());
+     
      
      switch (secim)
     {
@@ -22,6 +22,10 @@ class Hesap
         if (bakiye>=cekmek)
         {
           bakiye-=cekmek;
+
+
+
+        
           Console.Write($"HESABINIZDAN {cekmek}PARA ÇEKİLDE \n KALAN BAKİYENİZ:{bakiye}");
         }
         else
